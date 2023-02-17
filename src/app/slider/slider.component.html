@@ -1,0 +1,26 @@
+<section>
+  <h2>Watch Now</h2>
+  <div class="slider_align">
+    <button (click)="previousMovie()">&lt;</button>
+    <div
+      style="
+        display: flex;
+        gap: 1rem;
+        border: 2px solid white;
+        background-color: lightcoral;
+      "
+    >
+      <div>
+        <h2 style="width: 70px; color: black; margin-left: 0.5rem">
+          {{ items[index].title }}
+        </h2>
+        <p style="width: 160px; color: black; margin-left: 0.5rem">
+          {{ items[index].description }}
+        </p>
+      </div>
+
+      <img [src]="items[index].image" width="740px" />
+    </div>
+    <button (click)="nextMovie()">&gt;</button>
+  </div>
+</section>

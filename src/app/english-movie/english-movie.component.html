@@ -1,0 +1,11 @@
+<h2>Popular English Movies</h2>
+<section
+  routerLink="/movies/{{ data.title }}"
+  style="display: inline-block; text-align: center"
+  *ngFor="let data of englishMovieData"
+>
+  <p style="display: inline-block">{{ data.title }}</p>
+  <br />
+  <img [src]="data.posterurl" />
+</section>
+<router-outlet></router-outlet>

@@ -1,0 +1,8 @@
+<section>
+  <p>
+    {{ movieData.title | uppercase }} ----
+    {{ movieData.releaseDate | date : "long" | uppercase }}
+  </p>
+  <img [src]="movieData.posterurl" />
+  <p>{{ movieData.storyline }}</p>
+</section>

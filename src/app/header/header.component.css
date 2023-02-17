@@ -1,0 +1,5 @@
+.header-style{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-between;
+}

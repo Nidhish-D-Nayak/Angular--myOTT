@@ -1,0 +1,5 @@
+<h3>Trending movies</h3>
+<section *ngFor="let trending_movie of trending_movies" class="movie_align">
+  <img [src]="trending_movie.Poster" width="260px" height="184px" />
+  <div>{{ trending_movie.Released }}</div>
+</section>
